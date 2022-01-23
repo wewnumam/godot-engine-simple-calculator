@@ -1,0 +1,221 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="."]
+margin_left = 149.0
+margin_top = 214.0
+margin_right = 199.0
+margin_bottom = 264.0
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 229.0
+margin_top = 214.0
+margin_right = 279.0
+margin_bottom = 264.0
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 309.0
+margin_top = 214.0
+margin_right = 359.0
+margin_bottom = 264.0
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 149.0
+margin_top = 284.0
+margin_right = 199.0
+margin_bottom = 334.0
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 229.0
+margin_top = 284.0
+margin_right = 279.0
+margin_bottom = 334.0
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 309.0
+margin_top = 284.0
+margin_right = 359.0
+margin_bottom = 334.0
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button7" type="Button" parent="."]
+margin_left = 149.0
+margin_top = 354.0
+margin_right = 199.0
+margin_bottom = 404.0
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 229.0
+margin_top = 354.0
+margin_right = 279.0
+margin_bottom = 404.0
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button9" type="Button" parent="."]
+margin_left = 309.0
+margin_top = 354.0
+margin_right = 359.0
+margin_bottom = 404.0
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button0" type="Button" parent="."]
+margin_left = 229.0
+margin_top = 424.0
+margin_right = 279.0
+margin_bottom = 474.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusButton" type="Button" parent="."]
+margin_left = 409.0
+margin_top = 214.0
+margin_right = 459.0
+margin_bottom = 264.0
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MinusButton" type="Button" parent="."]
+margin_left = 479.0
+margin_top = 215.0
+margin_right = 529.0
+margin_bottom = 265.0
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MultiplyButton" type="Button" parent="."]
+margin_left = 409.0
+margin_top = 284.0
+margin_right = 459.0
+margin_bottom = 334.0
+text = "x"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DivideButton" type="Button" parent="."]
+margin_left = 479.0
+margin_top = 284.0
+margin_right = 529.0
+margin_bottom = 334.0
+text = "/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResultButton" type="Button" parent="."]
+margin_left = 549.0
+margin_top = 354.0
+margin_right = 649.0
+margin_bottom = 474.0
+text = "="
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResetButton" type="Button" parent="."]
+margin_left = 549.0
+margin_top = 284.0
+margin_right = 649.0
+margin_bottom = 334.0
+text = "C"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackspaceButton" type="Button" parent="."]
+margin_left = 549.0
+margin_top = 214.0
+margin_right = 649.0
+margin_bottom = 264.0
+text = "<-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 149.0
+margin_top = 114.0
+margin_right = 649.0
+margin_bottom = 164.0
+align = 2
+editable = false
+placeholder_text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="Button1" to="." method="_on_1_button_down"]
+[connection signal="button_down" from="Button1" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_2_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_4_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_5_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button6" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button6" to="." method="_on_6_button_down"]
+[connection signal="button_down" from="Button7" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button7" to="." method="_on_7_button_down"]
+[connection signal="button_down" from="Button8" to="." method="_on_8_button_down"]
+[connection signal="button_down" from="Button8" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button9" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button9" to="." method="_on_9_button_down"]
+[connection signal="button_down" from="Button0" to="." method="_on_number_button_down"]
+[connection signal="button_down" from="Button0" to="." method="_on_0_button_down"]
+[connection signal="button_down" from="PlusButton" to="." method="_on_plus_button_down"]
+[connection signal="button_down" from="MinusButton" to="." method="_on_minus_button_down"]
+[connection signal="button_down" from="MultiplyButton" to="." method="_on_multiply_button_down"]
+[connection signal="button_down" from="DivideButton" to="." method="_on_divide_button_down"]
+[connection signal="button_down" from="ResultButton" to="." method="_on_result_button_down"]
+[connection signal="button_down" from="ResetButton" to="." method="_on_reset_button_down"]
+[connection signal="button_down" from="BackspaceButton" to="." method="_on_backspace_button_down"]
